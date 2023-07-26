@@ -8,6 +8,20 @@
     <!-- Tailwind and DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/023f2d39b7.js" crossorigin="anonymous"></script>
     <!-- Lato google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +33,71 @@
     </style>
 </head>
 
-<body>
+<body class="font-lato">
+    <header class="container mx-auto">
+        <!-- navbar section -->
+        <nav class="hidden md:block lg:block lg:mt-8">
+            <div
+                class="flex md:flex-col-reverse md:gap-7 lg:flex-row justify-between items-center bg-[#F85559] p-7 rounded-[50px]">
+                <div>
+                    <ul class="flex md:gap-12 lg:gap-6 items-center font-inter text-base text-[#FFF]">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div>
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="font-lato text-4xl text-[#FFF]">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <input class="md:w-[600px] lg:w-[320px] py-2 px-4 rounded-2xl cursor-pointer" type="search" name=""
+                        id="" placeholder="Search here">
+                    <span class="absolute right-4 top-2 cursor-pointer"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </div>
+        </nav>
+        <!-- for small device -->
+        <nav class="p-7 block md:hidden lg:hidden ">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-9">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="font-lato text-[22px] text-[#121212]">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner section  -->
 
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
